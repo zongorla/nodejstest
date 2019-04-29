@@ -1,0 +1,24 @@
+{
+  "name": "imageserver",
+  "version": "1.0.1",
+  "description": "Code coverage test",
+  "main": "server.js",
+  "scripts": {
+    "test": "nyc --reporter=html --reporter=text mocha --exit",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "imageserver"
+  ],
+  "author": "Zongor Lajos",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.3",
+    "nyc": "^14.0.0"
+  }
+}
